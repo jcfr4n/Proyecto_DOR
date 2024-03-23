@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: relative;
+    display: block;
+    height: 20vh;
+}
+ul {
+    position: absolute;
+    padding: 0 auto;
+}
+li {
+    list-style: none;
+    margin: 1rem 3rem;
+    float: left;
+}
+.tab2 {
+    
+}
