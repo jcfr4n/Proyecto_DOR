@@ -2,20 +2,27 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: black;
+}
 nav {
-    position: relative;
-    display: block;
-    height: 20vh;
+    width: 70%;
+    margin: 3rem auto;
+    height: 5rem;
+    background-color: white;
 }
 ul {
-    position: absolute;
-    padding: 0 auto;
+    text-align: center;
+    height: 100%;
 }
-li {
-    list-style: none;
-    margin: 1rem 3rem;
-    float: left;
+li {margin: 0 .5rem;
+    display: inline-block;
+    border: 1px solid rgb(187, 178, 178);
+    padding: 1rem 4rem;
+    position: relative;
+    transform: translateY(50%);
 }
-.tab2 {
-    
+.tab1 {
+    font-size: large;
+    background-color: rgb(52, 250, 101);
 }
