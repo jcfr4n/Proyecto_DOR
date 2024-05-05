@@ -1,6 +1,6 @@
 :root {
     --color-claro: #E99B62;
-    --color-claro-transparencia: #E99B6280;
+    --color-claro-transparencia: #E99B6277; /* Los dos últimos digitos se emplean para fijar la opacidad del color siendo 00 completamente transparente y FF coompletamente opaco */
     --color-medio-claro: #CC7738;
     --color-medio: #AB581B;
     --color-medio-oscuro: #893D04;
@@ -49,7 +49,6 @@ nav {
 }
 
 nav ul {
-    border: 2px solid red;
     position: relative;
     font-family: var(--font-family-links);
     font-size: var(--font-size-grande);
@@ -170,4 +169,66 @@ card>article {
 .imagen_gde {
     max-width: 45%;
     min-width: 20%;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--color-medio-claro);
+    font-family: var(--font-family-links);
+    height: 3rem; /* Altura del footer */
+    padding: 0 5rem; /* Espaciado interno */
+}
+
+.footer {
+    position: relative;
+    height: 100%; /* Asegura que ocupe toda la altura */
+}
+
+.footer .izquierda,
+.footer .derecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer .izquierda {
+    left: 0;
+    padding-left: 5rem; /* Espaciado a la izquierda */
+}
+
+.footer .derecha {
+    right: 0;
+    text-align: right; /* Alineación del texto a la derecha */
+}
+
+.legales {
+    position: relative;
+    display: inline-block;
+}
+
+.legales li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 1rem;
+    border-left: 1px solid var(--color-medio);
+    padding-left: 1rem;
+    line-height: 3rem; /* Alineación vertical */
+}
+
+/* Estilos de los enlaces */
+a:link,
+a:visited {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--color-medio-oscuro);
+}
+
+a:hover {
+    color: var(--color-claro);
+    text-decoration: underline;
 }
