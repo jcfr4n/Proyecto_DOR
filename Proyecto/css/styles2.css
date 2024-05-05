@@ -1,9 +1,10 @@
 :root {
-	--color-claro: #E99B62;
-	--color-medio-claro: #CC7738;
-	--color-medio: #AB581B;
-	--color-medio-oscuro: #893D04;
-	--color-oscuro: #5E2800;
+    --color-claro: #E99B62;
+    --color-claro-transparencia: #E99B6280;
+    --color-medio-claro: #CC7738;
+    --color-medio: #AB581B;
+    --color-medio-oscuro: #893D04;
+    --color-oscuro: #5E2800;
     --color-blanco: #FFFFFF;
     --color-negro: #000000;
 
@@ -18,12 +19,14 @@
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: var(--font-family-general);
     font-size: var(--font-size-medio);
     color: var(--color-blanco);
-    background-color: var(--color-claro), 50%;
+    background-color: var(--color-claro-transparencia);
 }
+
 header {
     background-color: var(--color-medio-claro);
     color: var(--color-blanco);
@@ -32,16 +35,19 @@ header {
     width: 100%;
     height: 170px;
 }
-nav{
+
+nav {
     display: inline-block;
     position: absolute;
     height: 100%;
 }
+
 #logo {
     position: relative;
     display: inline-block;
     margin: 0 5rem;
 }
+
 nav ul {
     border: 2px solid red;
     position: relative;
@@ -49,8 +55,8 @@ nav ul {
     font-size: var(--font-size-grande);
     top: 50%;
     transform: translateY(-50%);
-
 }
+
 nav ul li {
     display: inline-block;
     margin: 0 2rem;
@@ -62,7 +68,6 @@ section.header {
     margin-right: 5rem;
     top: 50%;
     transform: translateY(-20%);
-    
 }
 
 article.caja-buscar, article.caja-idioma {
@@ -82,6 +87,7 @@ main {
     position: relative;
     width: 100%;
 }
+
 aside {
     position: relative;
     display: inline-block;
@@ -92,6 +98,7 @@ aside {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
 aside:hover {
     opacity: 1;
 }
@@ -101,6 +108,7 @@ aside ul {
     top: 50px;
     list-style: none;
 }
+
 aside ul li {
     font-size: var(--font-size-grande);
     display: block;
@@ -109,6 +117,7 @@ aside ul li {
     margin: 2rem 0;
     text-align: center;
 }
+
 hr {
     border: 1px solid var(--color-medio);
     margin: 2rem 0;
@@ -130,7 +139,7 @@ card {
     width: 100%;
 }
 
-.card_izq * {
+.card_izq *, .card_der * {
     float: left;
     margin-left: 1rem;
 }
@@ -145,21 +154,16 @@ card>article {
     max-width: 50%;
 }
 
-card.articulo_izq * {
+.articulo_izq *, .articulo_der * {
     display: block;
     margin-bottom: 1rem;
 }
 
-card.articulo_der * {
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.articulo_izq{
+.articulo_izq {
     display: inline;
 }
 
-.articulo_der{
+.articulo_der {
     display: inline-grid;
 }
 
