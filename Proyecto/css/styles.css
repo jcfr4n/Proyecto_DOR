@@ -49,7 +49,7 @@ body {
 }
 
 .grid-item:hover {
-    width: 300px;
+    width: 350px;
 }
 
 .grid-item:hover #img-producto {
@@ -57,7 +57,7 @@ body {
 }
 
 #img-producto {
-    width: 225px;
+    width: 300px;
     /*  height: 225px;*/
 }
 
@@ -135,16 +135,6 @@ aside ul li {
 hr {
     border: 1px solid var(--color-medio);
     margin: 2rem 0;
-}
-
-#contenido {
-    color: var(--color-negro);
-    display: inline-grid;
-    position: absolute;
-    width: 80%;
-    height: 100vh;
-    padding: 1rem;
-    top: 1rem;
 }
 
 card {

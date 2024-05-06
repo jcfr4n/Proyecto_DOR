@@ -129,7 +129,7 @@ hr {
     display: inline-grid;
     position: absolute;
     width: 80%;
-    height: 65vh;
+    height: 67vh;
     padding: 1rem;
     top: 1rem;
     overflow-y: auto;
@@ -194,22 +194,24 @@ footer {
     /* Asegura que ocupe toda la altura */
 }
 
-.footer .izquierda,
-.footer .derecha {
+.izquierda,
+.derecha {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    align-content: center;
 }
 
-.footer .izquierda {
+.izquierda {
     left: 0;
     padding-left: 5rem;
     /* Espaciado a la izquierda */
 }
 
-.footer .derecha {
+.derecha {
     right: 0;
     text-align: right;
+    transform: translate(-175px, -50%);
     /* Alineación del texto a la derecha */
 }
 
