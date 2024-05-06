@@ -33,20 +33,35 @@ section article {
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-    /* text-align: center; */
-    padding: 20px;
     font-size: 17px;
+    height: fit-content;
     width: fit-content;
     border-radius: 3px;
+    transition: width 10s;
+    box-shadow: 2px 2px 2px 2px #444444;
+}
+
+.grid-item:hover {
+    width: 300px;
+}
+
+.grid-item:hover #img-producto {
+    width: 100%;
 }
 
 #img-producto {
     width: 225px;
+  /*  height: 225px;*/
 }
 
 .grid-item > *  {
     margin-bottom: 10px;
+    border-radius: 3px;
 }
 
-
-
+.texto-etiqueta  {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    display: block;
+}
