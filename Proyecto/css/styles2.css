@@ -1,6 +1,7 @@
 :root {
     --color-claro: #E99B62;
-    --color-claro-transparencia: #E99B6277; /* Los dos últimos digitos se emplean para fijar la opacidad del color siendo 00 completamente transparente y FF coompletamente opaco */
+    --color-claro-transparencia: #E99B6277;
+    /* Los dos últimos digitos se emplean para fijar la opacidad del color siendo 00 completamente transparente y FF coompletamente opaco */
     --color-medio-claro: #CC7738;
     --color-medio: #AB581B;
     --color-medio-oscuro: #893D04;
@@ -69,7 +70,8 @@ section.header {
     transform: translateY(-20%);
 }
 
-article.caja-buscar, article.caja-idioma {
+article.caja-buscar,
+article.caja-idioma {
     position: relative;
     float: left;
     margin: 0 1rem;
@@ -91,10 +93,10 @@ aside {
     position: relative;
     display: inline-block;
     width: 15%;
-    height: 100vh;
-    background-color: var(--color-medio-claro);
+    height: 75vh;
+    background-color: var(--color-medio-oscuro);
     color: var(--color-blanco);
-    opacity: 0;
+    opacity: 0.5;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -127,9 +129,10 @@ hr {
     display: inline-grid;
     position: absolute;
     width: 80%;
-    height: 100vh;
+    height: 65vh;
     padding: 1rem;
     top: 1rem;
+    overflow-y: auto;
 }
 
 card {
@@ -138,7 +141,8 @@ card {
     width: 100%;
 }
 
-.card_izq *, .card_der * {
+.card_izq *,
+.card_der * {
     float: left;
     margin-left: 1rem;
 }
@@ -153,7 +157,8 @@ card>article {
     max-width: 50%;
 }
 
-.articulo_izq *, .articulo_der * {
+.articulo_izq *,
+.articulo_der * {
     display: block;
     margin-bottom: 1rem;
 }
@@ -177,13 +182,16 @@ footer {
     bottom: 0;
     background-color: var(--color-medio-claro);
     font-family: var(--font-family-links);
-    height: 3rem; /* Altura del footer */
-    padding: 0 5rem; /* Espaciado interno */
+    height: 3rem;
+    /* Altura del footer */
+    padding: 0 5rem;
+    /* Espaciado interno */
 }
 
 .footer {
     position: relative;
-    height: 100%; /* Asegura que ocupe toda la altura */
+    height: 100%;
+    /* Asegura que ocupe toda la altura */
 }
 
 .footer .izquierda,
@@ -195,12 +203,14 @@ footer {
 
 .footer .izquierda {
     left: 0;
-    padding-left: 5rem; /* Espaciado a la izquierda */
+    padding-left: 5rem;
+    /* Espaciado a la izquierda */
 }
 
 .footer .derecha {
     right: 0;
-    text-align: right; /* Alineación del texto a la derecha */
+    text-align: right;
+    /* Alineación del texto a la derecha */
 }
 
 .legales {
@@ -214,7 +224,8 @@ footer {
     margin-left: 1rem;
     border-left: 1px solid var(--color-medio);
     padding-left: 1rem;
-    line-height: 3rem; /* Alineación vertical */
+    line-height: 3rem;
+    /* Alineación vertical */
 }
 
 /* Estilos de los enlaces */
