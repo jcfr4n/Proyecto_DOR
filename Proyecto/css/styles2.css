@@ -174,47 +174,45 @@ card>article {
 footer {
     position: fixed;
     width: 100%;
-    bottom: 0;
-    background-color: var(--color-medio-claro);
+    bottom: 0px;
     font-family: var(--font-family-links);
-    height: 3rem; /* Altura del footer */
-    padding: 0 5rem; /* Espaciado interno */
+    background-color: var(--color-medio-claro);
 }
 
 .footer {
     position: relative;
-    height: 100%; /* Asegura que ocupe toda la altura */
+    float: left;
+    height: 3rem;
 }
-
-.footer .izquierda,
-.footer .derecha {
-    position: absolute;
-    top: 50%;
+.izquierda>span {
+    position: relative;
+    top: 30%;
     transform: translateY(-50%);
+    padding-left: 5rem;
 }
-
-.footer .izquierda {
-    left: 0;
-    padding-left: 5rem; /* Espaciado a la izquierda */
-}
-
-.footer .derecha {
-    right: 0;
-    text-align: right; /* Alineación del texto a la derecha */
+.derecha{
+    position: relative;
+    float: right;
+    text-align: right;
+    padding-right: 5rem;
 }
 
 .legales {
     position: relative;
     display: inline-block;
+    width: 100%;
+    height: 3rem;
 }
 
-.legales li {
+.legales>li {
+    position: relative;
     list-style: none;
     display: inline-block;
     margin-left: 1rem;
-    border-left: 1px solid var(--color-medio);
     padding-left: 1rem;
-    line-height: 3rem; /* Alineación vertical */
+    border-left: 1px solid var(--color-medio);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Estilos de los enlaces */
