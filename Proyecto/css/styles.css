@@ -180,3 +180,32 @@ card.articulo_der * {
     max-width: 45%;
     min-width: 20%;
 }
+
+.privacidad {
+    color: black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.privacidad h1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-size: var(--font-size-grande);
+}
+
+.privacidad span {
+    font-weight: bolder;
+}
+
+.info-contacto {
+    color: black !important; 
+    text-decoration: underline !important;
+}
+
+.info-contacto:hover {
+    font-weight: 600;
+}
