@@ -7,13 +7,11 @@
 html, body {
     height: 100%;
     width: 100%;
-    /* display: flex; */
 }
 
 :root {
     --color-claro: #E99B62;
     --color-claro-transparencia: #E99B6277;
-    /* Los dos últimos digitos se emplean para fijar la opacidad del color siendo 00 completamente transparente y FF coompletamente opaco */
     --color-medio-claro: #CC7738;
     --color-medio: #AB581B;
     --color-medio-oscuro: #893D04;
@@ -34,13 +32,11 @@ body {
     font-size: var(--font-size-medio);
     color: var(--color-blanco);
     background-color: var(--color-claro-transparencia);
-    /* overflow-y: scroll; */
 }
 
 header {
     background-color: var(--color-medio-claro);
     color: var(--color-blanco);
-    /* padding: 10px; */
     position: relative;
     width: 100%;
     height: 13%;
@@ -122,6 +118,7 @@ main {
     position: relative;
     width: 100%;
     height: 79%;
+    overflow-y: auto;
 }
 
 aside {
@@ -143,16 +140,13 @@ aside ul {
     position: sticky;
     top: 50px;
     list-style: none;
-    /* margin-top: 25px; */
 }
 
 aside ul li {
     font-size: var(--font-size-intermedio);
     display: block;
-    /* padding: 1.5rem; */
     padding: 0;
     border-bottom: 0px solid var(--color-medio);
-    /* margin: 2rem 0; */
     text-align: center;  
 }
 
@@ -232,20 +226,13 @@ card>article {
 footer {
     position: relative;
     width: 100%;
-    /* bottom: 0; */
     background-color: var(--color-medio-claro);
     font-family: var(--font-family-links);
     height: 8%;
-    /* Altura del footer */
-    /* padding: 0 5rem; */
-    /* Espaciado interno */
-    /* left: 0; */
 }
 
 .footer {
-    /* position: relative; */
     height: 100%;
-    /* Asegura que ocupe toda la altura */
 }
 
 .izquierda,
@@ -257,11 +244,9 @@ footer {
 }
 
 .izquierda {
-    /* left: 0; */
     padding-left: 5rem;
     float: left;
     width: 40%;
-    /* Espaciado a la izquierda */
 }
 
 .derecha {
@@ -274,7 +259,6 @@ footer {
 }
 
 .legales {
-    /* position: relative; */
     display: inline-block;
     border-right: 1px solid var(--color-medio);
     padding-right: 1rem;
@@ -287,10 +271,8 @@ footer {
     border-left: 1px solid var(--color-medio);
     padding-left: 1rem;
     line-height: 3rem;
-    /* Alineación vertical */
 }
 
-/* Estilos de los enlaces */
 a:link,
 a:visited {
     color: var(--color-blanco);
