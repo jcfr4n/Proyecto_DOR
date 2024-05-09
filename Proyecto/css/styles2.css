@@ -217,7 +217,7 @@ card>article {
 
 .articulo_der {
     display: inline-grid;
-    justify-items: flex-end;
+    justify-items: flex-start;
 }
 
 .imagen_gde {
