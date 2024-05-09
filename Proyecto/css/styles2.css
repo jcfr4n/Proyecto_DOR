@@ -139,7 +139,6 @@ aside:hover {
 }
 
 aside ul {
-    position: sticky;
     top: 50px;
     list-style: none;
 }

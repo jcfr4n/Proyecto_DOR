@@ -37,53 +37,49 @@
             <h1>Formulario de contactos</h1>
             <hr>
             <form class="f_contacto" action="#" method="post">
+                <h2>Contacto</h2>
+                <hr>
                 <fieldset>
-                    <legend>&nbsp;Información de Contacto&nbsp;</legend>
-                    <p class="input">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </p>
-                    <p class="input">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    <p class="input">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="text" id="telefono" name="telefono">
-                    </p>
-                    
-                    <p class="input">
-                        <span>Género:</span>
-                        <label><input type="radio" name="genero" value="masculino" required>Masculino</label>
-                        <label><input type="radio" name="genero" value="femenino">Femenino</label>
-                        <label><input type="radio" name="genero" value="otro">Otro</label>
-                    </p>
-                    
-                </fieldset>
-                <fieldset>
-                    <legend>&nbsp;Mensaje&nbsp;</legend>
-                    <p class="input">
-                        <label for="asunto">Asunto:</label>
-                        <input type="text" id="asunto" name="asunto" required>
-                    </p>
-                    <p class="input textarea">                    
-                        <label for="mensaje">Mensaje:&nbsp;</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                    </p>
+                    <!-- <legend>&nbsp;Información de Contacto&nbsp;</legend> -->
+                    <section class="caja-campo">
+                        <label for="nombre">Nombre:</label> <br>
+                        <input type="text" id="campo-texto1" name="nombre" required>
+                    </section>
 
+                    <section class="caja-campo">
+                        <label for="apellido">Apellidos:</label> <br>
+                        <input type="text" id="campo-texto1" name="apellido" required>
+                    </section>
                     
-                    
-                        <p>¿Qué servicios te interesan?</p>
-                        <p>
-                            <label><input type="checkbox" name="servicios[]" value="Diseño Web">Diseño Web</label>
-                            <label><input type="checkbox" name="servicios[]" value="Desarrollo de Aplicaciones">Desarrollo de Aplicaciones</label>
-                            <label><input type="checkbox" name="servicios[]" value="Marketing Digital">Marketing Digital</label>
-                        </p>
-                    
+                    <section class="caja-campo">
+                        <label for="email">Correo Electrónico:</label> <br>
+                        <input type="email" id="campo-texto1" name="email" required>
+                    </section>
+
+                    <section class="caja-campo">
+                        <label for="telefono">Teléfono:</label> <br>
+                        <input type="text" id="campo-texto1" name="telefono">
+                    </section>
+
+                    <section class="caja-campo">
+                        <label for="Genero">Genero:</label>
+                        <select name="genero" id="desplegable-genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                            <option value="no-contesta">Prefiero no contestar</option>
+                        </select>
+                    </section>
+                    <br>
+                    <section class="caja-campo">
+                        <label for="mensaje">Mensaje:&nbsp;</label> <br> <br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </section>
+                        
                 </fieldset>
+
                 <button type="submit">Enviar</button>
             </form>
-            
         </section>
     </main>
     <footer>
