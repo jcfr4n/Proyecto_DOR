@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Miga Bakery</title>
+    <link rel="stylesheet" href="../css/styles2.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../resources/img/logo2.ico" type="image/x-icon">
+    <script src="../javascript/myscript.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../resources/img/logo2.png" alt="Logo de La Miga Bakery" id="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/acercade.html">Acerca de</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="header">
+            <article class="caja-idioma">
+                <img id="flag" src="../resources/img/espana.png" alt="Bandera de España">
+                <label for="flag">Español</label>
+            </article>
+            <article class="caja-buscar">
+                <i class="fa fa-search"></i>
+                <input type="search" name="search" id="search" placeholder="Buscar">
+            </article>
+        </section>
+    </header>
+    <main>
+        <section id="formulario">
+            <h1>Formulario de contactos</h1>
+            <hr>
+            <form class="f_contacto" action="#" method="post">
+                <h2>Contacto</h2>
+                <hr>
+                <fieldset>
+                    <!-- <legend>&nbsp;Información de Contacto&nbsp;</legend> -->
+                    <section class="caja-campo">
+                        <label for="nombre">Nombre:</label> <br>
+                        <input type="text" id="campo-texto1" name="nombre" required>
+                    </section>
+
+                    <section class="caja-campo">
+                        <label for="apellido">Apellidos:</label> <br>
+                        <input type="text" id="campo-texto1" name="apellido" required>
+                    </section>
+                    
+                    <section class="caja-campo">
+                        <label for="email">Correo Electrónico:</label> <br>
+                        <input type="email" id="campo-texto1" name="email" required>
+                    </section>
+
+                    <section class="caja-campo">
+                        <label for="telefono">Teléfono:</label> <br>
+                        <input type="text" id="campo-texto1" name="telefono">
+                    </section>
+
+                    <section class="caja-campo">
+                        <label for="Genero">Genero:</label>
+                        <select name="genero" id="desplegable-genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                            <option value="no-contesta">Prefiero no contestar</option>
+                        </select>
+                    </section>
+                    <br>
+                    <section class="caja-campo">
+                        <label for="mensaje">Mensaje:&nbsp;</label> <br> <br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </section>
+                        
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer izquierda">
+            <span>Copyright © Pastelería La Miga</span>
+        </section>
+        <section class="footer derecha">
+            <ul class="legales">
+                <li><a href="../pages/privacidad.html">Privacidad</a></li>
+                <li><a href="../pages/coockies.html">Política de Cookies</a></li>
+                <li><a href="../pages/avisolegal.html">Aviso legal</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>

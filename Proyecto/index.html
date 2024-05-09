@@ -13,18 +13,18 @@
 
 <body>
     <header>
-        <a href="./index.html"><img src="./resources/img/logo2.png" alt="Logo de La Miga Bakery" id="logo"></a>
+        <a href="../index.html"><img src="./resources/img/logo2.png" alt="Logo de La Miga Bakery" title="La Miga Bakery" id="logo"></a>
         <nav>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/acercade.html">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <section class="header">
             <article class="caja-idioma">
-                <img id="flag" src="./resources/img/espana.png" alt="Bandera de España">
+                <img id="flag" src="./resources/img/espana.png" alt="Icono de Bandera de España" title="Español">
                 <label for="flag">Español</label>
             </article>
             <article class="caja-buscar">
@@ -36,14 +36,14 @@
     <main>
         <aside>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/acercade.html">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#noticias-relevantes">Noticias relevantes</a></li>
+                <li><a href="#mas-vendidos">Más vendidos</a></li>
+                <li><a href="#horario">Horario</a></li>
             </ul>
         </aside>
+
         <section id="contenido">
-            <h1>NOTICIAS RELEVANTES</h1>
+            <h1 id="noticias-relevantes" class="titulo-seccion">Noticias relevantes:</h1>
             <hr>
             <card class="card_izq">
                 <img class="imagen_gde" src="./resources/img/amigos_panaderos.png"
@@ -73,33 +73,42 @@
                 </article>
             </card>
             <hr>
-            <card class="card_izq">
-                <img class="imagen_gde" src="./resources/img/amigos_panaderos.png"
+
+            <h1 id="mas-vendidos" class="titulo-seccion">Nuestros productos:</h1>
+            <hr>
+            <p class="introduccion-seccion-prod">
+                ¡Bienvenidos a nuestra sección de los productos más vendidos de la panadería! Aquí encontrarás los favoritos 
+                que conquistan paladares día tras día. Desde los clásicos hasta las últimas novedades, cada artículo es una 
+                delicia que no querrás perderte. Déjate tentar por lo mejor de lo mejor de nuestra panadería.
+            </p>
+
+            <card class="card_der card_prod">
+                <img class="imagen_gde" src="./resources/img/dulces.png"
                     alt="Foto de grupo de amigos_panaderos" id="amigos">
-                <article class="articulo_izq">
-                    <h2>Amigos Panaderos</h2>
-                    <p>En La Miga Bakery nos encanta compartir con nuestros amigos panaderos. Por eso, hemos creado un
-                        espacio en el que podrás compartir tus recetas, tus trucos y tus experiencias con otros
-                        panaderos. ¡Únete a nuestra comunidad!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aperiam doloremque iusto
-                        provident pariatur blanditiis nostrum, consequuntur tenetur magni minima maiores tempora impedit
-                        magnam odio architecto voluptatum, cum et suscipit!</p>
+                <article class="articulo_der">
+                    <p>
+                        ¡Descubre nuestro exquisito catálogo de productos frescos y artesanales, elaborados con amor 
+                        y dedicación cada día en nuestra panadería! Desde el aroma tentador del pan recién horneado hasta 
+                        la dulzura irresistible de nuestros pasteles y postres, cada bocado es una experiencia única. <br> <br>
+                        En nuestra página, encontrarás una variedad de delicias que deleitarán tus sentidos y te harán volver 
+                        por más. ¡Déjate seducir por el sabor auténtico de lo hecho a mano con pasión!
+                    </p>
+
+                    <a href="./pages/productos.html"><button type="button" title="Ver productos">Ver productos</button></a>
+                    <!-- <button type="button" title="Ver productos">Ver productos</button> -->
                 </article>
             </card>
             <hr>
-            <card class="card_der">
-                <img class="imagen_gde" src="./resources/img/amigos_panaderos.png"
-                    alt="Foto de grupo de amigos_panaderos" id="amigos">
-                <article class="articulo_der">
-                    <h2>Amigos Panaderos</h2>
-                    <p>En La Miga Bakery nos encanta compartir con nuestros amigos panaderos. Por eso, hemos creado un
-                        espacio en el que podrás compartir tus recetas, tus trucos y tus experiencias con otros
-                        panaderos. ¡Únete a nuestra comunidad!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat aperiam doloremque iusto
-                        provident pariatur blanditiis nostrum, consequuntur tenetur magni minima maiores tempora impedit
-                        magnam odio architecto voluptatum, cum et suscipit!</p>
-                </article>
-            </card>
+
+            <h1 id="horario" class="titulo-seccion">Horario:</h1>
+            <hr>
+            <p class="introduccion-seccion-prod">
+                A continuación, encontrarás los momentos en los que estamos listos para servirte con nuestras creaciones artesanales.
+                ¡No te lo pierdas!
+            </p>
+            <br>
+            <img src="./resources/img/horario-la-miga.jpg" alt="Horario de panaderia 'La Miga'" title="Horario semanal" class="horario">
+            
         </section>
     </main>
     <footer>
@@ -108,9 +117,9 @@
         </section>
         <section class="footer derecha">
             <ul class="legales">
-                <li><a href="./pages/privacidad.html">Privacidad</a></li>
-                <li><a href="./pages/coockies.html">Política de Cookies</a></li>
-                <li><a href="./pages/avisolegal.html">Aviso legal</a></li>
+                <li><a href="./pages/privacidad.html" title="Privacidad">Privacidad</a></li>
+                <li><a href="./pages/cookies.html" title="Política de cookies">Política de Cookies</a></li>
+                <li><a href="./pages/avisolegal.html" title="Aviso legal">Aviso legal</a></li>
             </ul>
         </section>
     </footer>

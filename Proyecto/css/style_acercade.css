@@ -1,13 +1,9 @@
 
-main {
-    display: flex;
-}
-
 .informacion {
     /* padding: 50px; */
     margin: 30px;
-    float: left;
-    width: 50%;
+    width: 55%;
+    margin: 0 auto;
 }
 
 h2 {
@@ -16,9 +12,10 @@ h2 {
 }
 
 .informacion p {
-    height: 100%;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 90px;
     font-size: --font-size-medio;
     color: var(--color-negro);
 }
@@ -27,10 +24,11 @@ h2 {
     /* padding: 50px; */
     height: 100%;
     margin: 30px;
-    float: right;
-    width: 50%;
+    width: 55%;
     justify-content: center;
     margin-bottom: 70px;
+    margin: 0 auto;
+    padding-top: 60px;
 }
 
 .mapa iframe {
@@ -63,10 +61,19 @@ h2 {
 }
 
 hr {
-    width: 60%;
+    width: 75%;
 }
 
-p {
-    width: 60%;
+span {
+    font-weight: bold;
 }
+
+.video {
+    width: 866px;
+    height: 487px;
+}
+
+/* p {
+    width: 60%;
+} */
 
