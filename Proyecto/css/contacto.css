@@ -6,10 +6,16 @@
     top: 1rem;
 }
 
+h1 {
+    color: black;
+    font-size: var(--font-size-titulo);
+    padding-left: 10px;
+}
+
 .f_contacto {
     color: var(--color-blanco);
-    background-color: var(--color-claro-transparencia);
-    border: 1px solid var(--color-medio);
+    background-color: #FCFCFC;
+    border: 1px solid var(--color-oscuro);
     font-size: var(--font-family-general);
     font-weight: 600;
     display: inline-block;
@@ -18,13 +24,31 @@
     min-height: 35vh;
     padding: 1rem;
     border: 1px solid var(--color-medio);
+    border-radius: 10px;
     left: 50%;
     transform: translateX(-50%);
+    color: black;
+
 }
+
+.f_contacto h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: var(--font-size-titulo);
+}
+
+.f_contacto hr {
+    margin: 15px;
+    border: 1px solid var(--color-oscuro);
+}
+
 fieldset {
     position: relative;
     margin: 1rem;
-    border: 1px solid var(--color-medio);
+    /* border: 1px solid #545454; */
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 legend {
     margin: 3px 0;
@@ -39,30 +63,66 @@ p.input{
     height: 3rem;
 }
 
-#nombre, #email, #telefono, #asunto {
-    width: 65%;
-    height: 2rem;
+#campo-texto1 {
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 7px;
+    border: 1px solid #545454;
+    padding-left: 5px;
+    margin-top: 5px;
 }
+
+#campo-texto1:focus {
+    outline: none;
+}
+
 #mensaje {
-    position: absolute;
     transform: translateY(-10%);
-    width: 70%;
-    height: 5rem;
+    width: 50%;
+    height: 7rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #545454;
 }
+
+#mensaje:focus {
+    outline: none;
+}
+
 form p, form button {
     margin: 1rem;
 }
 
 form button {
     position: relative;
-    width: 20%;
+    width: 10%;
     height: 3rem;
     background-color: var(--color-claro);
     color: var(--color-blanco);
-    border: 1px solid var(--color-medio);
+    /* border: 1px solid var(--color-medio); */
+    border-radius: 10px;
     font-size: var(--font-family-general);
     font-weight: 600;
     cursor: pointer;
-    float: right;
     margin: 1rem;
+    transition: all 0.3s ease-in-out;
+    float: right;
+}
+
+form button:hover {
+    background-color: var(--color-medio-oscuro);
+    transform: scale(1.05);
+}
+
+.caja-campo {
+    padding-bottom: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.f_contacto select {
+    width: 20%;
+    height: 1.5rem;
+    border-radius: 7px;
+    border: 1px solid #545454;
 }

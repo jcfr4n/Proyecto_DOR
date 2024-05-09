@@ -139,7 +139,6 @@ aside:hover {
 }
 
 aside ul {
-    position: sticky;
     top: 50px;
     list-style: none;
 }
@@ -177,6 +176,7 @@ hr {
     padding: 1rem;
     top: 1rem;
     margin-left: 20px;
+    overflow-y: auto;
 }
 
 #contenido h1 {
