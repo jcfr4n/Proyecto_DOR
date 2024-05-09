@@ -4,12 +4,11 @@
     width: 80%;
     padding: 1rem;
     top: 1rem;
-    border: 1px solid var(--color-medio);
 }
 
 .f_contacto {
     color: var(--color-blanco);
-    background-color: var(--color-claro);
+    background-color: var(--color-claro-transparencia);
     border: 1px solid var(--color-medio);
     font-size: var(--font-family-general);
     font-weight: 600;
@@ -25,7 +24,6 @@
 fieldset {
     position: relative;
     margin: 1rem;
-    padding: 1rem;
     border: 1px solid var(--color-medio);
 }
 legend {
@@ -36,19 +34,35 @@ p.input{
     display: inline-block;
     width: 40%;
     margin: 1rem;
-    padding: 1rem;
     font-size: var(--font-family-general);
     font-weight: 600;
     height: 3rem;
 }
 
 #nombre, #email, #telefono, #asunto {
-    width: 60%;
+    width: 65%;
     height: 2rem;
 }
 #mensaje {
     position: absolute;
-    transform: translateY(-40%);
+    transform: translateY(-10%);
     width: 70%;
-    height: 6rem;
+    height: 5rem;
+}
+form p, form button {
+    margin: 1rem;
+}
+
+form button {
+    position: relative;
+    width: 20%;
+    height: 3rem;
+    background-color: var(--color-claro);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-medio);
+    font-size: var(--font-family-general);
+    font-weight: 600;
+    cursor: pointer;
+    float: right;
+    margin: 1rem;
 }
